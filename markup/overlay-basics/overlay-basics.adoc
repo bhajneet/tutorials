@@ -1,0 +1,3 @@
+# Overlay Basics
+
+NOTE: This tutorial can help users show the currently activated line as livestream captions, video editing slides, and alternate displays (TV, Projector, Chromecast). This tutorial teaches users to learn how to modify the overlay url in Shabad OS and how to access it through a browser.

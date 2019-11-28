@@ -1,0 +1,50 @@
+# Livestream Captions
+
+NOTE: This tutorial is for users wishing to integrate Shabad OS captions with their live stream software. This tutorial shows how to add a browser to popular live streaming applications.
+
+## Concept
+
+Shabad OS provides a url which displays parts of the currently activated line. To show this on a livestream, one has to add a browser element to the livestream program/software and point it to the aforementioned url. For more information on setting up the overlay, please see link:../overlay-basics/overlay-basics.adoc[overlay-basics]. This tutorial will show you how to integrate the overlay url with your livestream software.
+
+## Practical
+
+### Step 1: Find the Overlay URL for Shabad OS
+
+The device running Shabad OS has an IP address. Shabad OS is available from port 1699 of this IP address. This combination of IP address and port can be used in a browser.
+
+If the same device is running Shabad OS and the livestream software you may simply use "localhost" or "127.0.0.1" for the IP address (i.e. "http://localhost:1699/overlay"). If this is the case, you may continue to the next step.
+
+Otherwise, you may find the IP address of the device from _Shabad OS > Settings > About_.
+
+Alternately, on Windows 10 you can use the _Task Manager_ (either right click the taskbar or use the hotkey ctrl+shift+esc) to find the IP address by going to the _Performance_ tab and selecting the Ethernet/Wi-Fi being used to connect to the network.
+
+.Finding the IP Address on Windows 10
+image::ip-address-windows-task-manager.png[Task Manager,300]
+
+Alternately, on macOS you can use the _System Preferences > Network_ (found from the apple icon in the menubar) and selecting the Ethernet/Wi-Fi being used to connect to the network.
+
+For example, if the device running Shabad OS has an IP address of 192.168.0.128, then the url for the overlay would be "http://192.168.0.128:1699/overlay". This could be used in a browser by any device on the same network, allowing you to use Shabad OS from one device and livestream software from a second device. Again if the livestream software and Shabad OS are both running on the same device, you may simply use "http://localhost:1699/overlay" as the URL.
+
+### Step 2: Configure the Livestream Software
+
+The most popular applications we've encountered with customers are OBS Studio and vMix, though any software which allows you to add a browser with a url will work.
+
+TIP: Modifying browser size or ratio will result in blurry, non-crisp text. Zooming or resizing the browser in your livestream software will degrade the quality. Always make changes to the overlay through Shabad OS when possible for the best appearance.
+
+#### OBS Studio
+
+Add a browser to your OBS Studio scene by clicking the "+" button in _Sources_. For ease of use we recommend naming this source "Shabad OS Captions" instead of simply "Browser". Focus on the URL, Width, Height, and Custom CSS fields. The URL from Step 1 should be used. Width and Height should match the Base Canvas Resolution found in _Settings > Video_ (e.g. 1920x1080 would mean 1920 for the width and 1080 for the height). Clear the contents of Custom CSS.
+
+.Adding a browser source to OBS Studio
+image::add-browser-obs-studio.png[OBS Studio,300]
+
+#### vMix
+
+Add a web browser input to your vMix mixer by clicking _Add Input > More > Web Browser_. Focus on the URL, Width, and Height fields. The URL from Step 1 should be used. Width and Height should match the Output Size found in _Settings > Display_ (e.g. 1920x1080 would mean 1920 for the width and 1080 for the height).
+
+.Adding a browser source to vMix
+image::add-browser-vmix.png[vMix,300]
+
+## Related
+
+- link:../overlay-basics/overlay-basics.adoc[overlay-basics]

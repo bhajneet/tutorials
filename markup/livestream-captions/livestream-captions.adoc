@@ -10,20 +10,7 @@ Shabad OS provides a url which displays parts of the currently activated line. T
 
 ### Step 1: Find the Overlay URL for Shabad OS
 
-The device running Shabad OS has an IP address. Shabad OS is available from port 1699 of this IP address. This combination of IP address and port can be used in a browser.
-
-If the same device is running Shabad OS and the livestream software you may simply use "localhost" or "127.0.0.1" for the IP address (i.e. "http://localhost:1699/overlay"). If this is the case, you may continue to the next step.
-
-Otherwise, you may find the IP address of the device from _Shabad OS > Settings > About_.
-
-Alternately, on Windows 10 you can use the _Task Manager_ (either right click the taskbar or use the hotkey ctrl+shift+esc) to find the IP address by going to the _Performance_ tab and selecting the Ethernet/Wi-Fi being used to connect to the network.
-
-.Finding the IP Address on Windows 10
-image::ip-address-windows-task-manager.png[Task Manager,300]
-
-Alternately, on macOS you can use the _System Preferences > Network_ (found from the apple icon in the menubar) and selecting the Ethernet/Wi-Fi being used to connect to the network.
-
-For example, if the device running Shabad OS has an IP address of 192.168.0.128, then the url for the overlay would be "http://192.168.0.128:1699/overlay". This could be used in a browser by any device on the same network, allowing you to use Shabad OS from one device and livestream software from a second device. Again if the livestream software and Shabad OS are both running on the same device, you may simply use "http://localhost:1699/overlay" as the URL.
+include::../url-endpoints/find-url.adoc[]
 
 ### Step 2: Configure the Livestream Software
 

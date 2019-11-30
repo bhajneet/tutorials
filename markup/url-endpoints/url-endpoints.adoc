@@ -1,0 +1,31 @@
+# URL Endpoints
+
+NOTE: This tutorial is for users wishing to know about Shabad OS being accessed through a web browser. This tutorial will show which pages are available as well as how to find the correct address to use in most modern web browsers.
+
+## Concept
+
+Most of Shabad OS is actually a website with different URLs. The presenter/display, controller, overlay, and settings/configuration are all accessible by most modern web browsers. This lets users connect to Shabad OS from other devices like another laptop or smartphone. For example, it allows users to control projectors in a gurdwara with their smartphone. For another example, it allows users to use Shabad OS on one device and livestream the captions with a different computer.
+
+## Practical
+
+### URL of the Host Device
+
+include::find-url.adoc[]
+
+### Table of Endpoints
+
+A breakdown of the terminology used for Shabad OS URLs tends to follow the pattern: http:// [IP ADDRESS] : [PORT] / [ENDPOINT]. In production, Shabad OS uses the port 1699 for stable and beta releases. For instance the base url (empty endpoint) could be http://localhost:1699/ and the overlay url (overlay endpoint) could be http://localhost:1699/overlay. Users can test these endpoints, on the same machine running Shabad OS, with a web browser like Google Chrome or Mozilla Firefox.
+
+.Shabad OS URL Endpoints
+|===
+|Endpoint |Description
+
+| /
+|The empty endpoint points to the default Shabad OS Presenter page (Users can get a controller from this page using the plus sign in the bottom right and then fullscreening the controller)
+
+|/controller/search?controllerOnly=true
+|A fullscreened controller in the search activity
+
+|/overlay
+|HTML file showing all relevant fields of currently activated line. Can be styled/customized by CSS. See link:../overlay-basics/overlay-basics.adoc[overlay-basics] for an outline.
+|===

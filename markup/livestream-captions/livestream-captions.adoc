@@ -34,4 +34,5 @@ image::add-browser-vmix.png[vMix,300]
 
 ## Related
 
-- link:../overlay-basics/overlay-basics.adoc[overlay-basics]
+- link:../overlay-basics/overlay-basics.adoc[Overlay Basics]
+- link:../overlay-advanced/overlay-advanced.adoc[Overlay Advanced]

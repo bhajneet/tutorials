@@ -1,3 +1,29 @@
 # Overlay Basics
 
 NOTE: This tutorial can help users show the currently activated line as livestream captions, video editing slides, and alternate displays (TV, Projector, Chromecast). This tutorial teaches users to learn how to modify the overlay url in Shabad OS and how to access it through a browser.
+
+## Concept
+
+There is an html page containing all the relevant information attached to the currently activated line in Shabad OS. This html page can be manipulated by styling called CSS. -There are some default style files available- Users can also customize this page by creating their own CSS (outlined in link:../overlay-advanced/overlay-advanced.adoc[Overlay Advanced]). This html page requires javascript, which is supported by most modern web browsers.
+
+Users can use Google Chrome to open the overlay URL and then cast it to a chromecast. Users could use built in web browsers in some smart TVs or modern consoles to accesss the overlay URL. Users could simply use the web browsers on their laptop/PC to make images to fit on their video editors as a captions slide. Mostly we have helped users integrate a web browser with their live streaming software for live captioning.
+
+## Practical
+
+### Step 1: Pick an Overlay Theme
+
+In _Shabad OS > Settings > Overlay_ there is a dropdown allowing users to pick general themes for how their overlay can appear. There are fullscreen overlays (similar to projectors), top (with captions appearing in a full banner on the top), and left (with captions appearing in a full banner on the left).
+
+TIP: If one wanted to, they could always resize the fullscreen overlay to a smaller width than the actual resolution and position it on the left or right side. There are themes for simple and direct uses and there are creative ways to manipulate these basic themes in other software.
+
+TIP: One can customize these basic themes or create their own based on a copy of the given themes. See link:../overlay-advanced/overlay-advanced.adoc[Overlay Advanced] for more info.
+
+### Step 2: Toggle display of fields
+
+Similar to choosing what is available on the presenter, a user toggles fields for the overlay. If one were using the shabad os display on one projector they could use the overlay on another projector to show different fields when presenting on two projectors (i.e. gurbani + punjabi on left screen and gurbani + english translation and pronunciation on right screen).
+
+For a description of each overlay field, please refer to the table in Settings > Display.
+
+### Step 3: Find the Overlay URL
+
+include::../url-endpoints/find-url.adoc[]

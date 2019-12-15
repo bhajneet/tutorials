@@ -20,7 +20,7 @@ A breakdown of the terminology used for Shabad OS URLs tends to follow the patte
 |===
 |Endpoint |Description
 
-| /
+|/
 |The empty endpoint points to the default Shabad OS Presenter page (Users can get a controller from this page using the plus sign in the bottom right and then fullscreening the controller)
 
 |/controller/search?controllerOnly=true

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Generator for the Shabad OS tutorials site",
   "scripts": {
-    "build": "antora antora-playbook.yml"
+    "start": "cd ui && npm start",
+    "build": "cd ui && npm run build && cd .. && antora antora-playbook.yml",
+    "postinstall": "cd ui && npm run install"
   },
   "repository": {
     "type": "git",

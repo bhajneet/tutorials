@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: Install dependencies
-          command: npm install --unsafe-permn
+          command: npm install --unsafe-perm
       - run:
           name: Build the docs
           command: npm run build

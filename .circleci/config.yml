@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: Install dependencies
-          command: npm install --unsafe-perm
+          command: npm install --unsafe-permn
       - run:
           name: Build the docs
           command: npm run build
@@ -22,8 +22,8 @@ jobs:
 
             git remote set-url origin https://${GITHUB_TOKEN}@github.com/ShabadOS/tutorials.git
 
-            git add build && git commit -m "build: release docs"
-            git subtree push --prefix build origin gh-pages
+            git add -f build && git commit -m "build: release docs"
+            git subtree push --prefix  build origin gh-pages
 
 workflows:
   version: 2

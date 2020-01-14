@@ -30,4 +30,8 @@ workflows:
   version: 2
   publish-tutorials:
     jobs:
-      - publish-docs
+      - publish-docs:
+          filters:
+            branches:
+              only:
+                - master

@@ -1,0 +1,22 @@
+{
+  "name": "@shabados/tutorials",
+  "version": "1.0.0",
+  "description": "Generator for the Shabad OS tutorials site",
+  "scripts": {
+    "build": "antora antora-playbook.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShabadOS/tutorials.git"
+  },
+  "author": "Shabad OS Team <team@shabados.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ShabadOS/tutorials/issues"
+  },
+  "homepage": "https://tutorials.shabados.com",
+  "dependencies": {
+    "@antora/cli": "^2.2.0",
+    "@antora/site-generator-default": "^2.2.0"
+  }
+}

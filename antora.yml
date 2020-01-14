@@ -1,5 +1,5 @@
-name: tutorials
-title: Tutorials
+name: desktop
+title: Desktop
 version: 1.0.0
 start_page: ROOT:home.adoc
 nav:

@@ -1,7 +1,7 @@
 site:
   title: Shabad OS Tutorials
   url: https://tutorials.shabados.com
-  start_page: tutorials::home.adoc
+  start_page: desktop::home.adoc
 
 content:
   sources:

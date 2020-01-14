@@ -4,7 +4,7 @@ NOTE: This tutorial can help users show the currently activated line as livestre
 
 ## Concept
 
-There is an html page containing all the relevant information attached to the currently activated line in Shabad OS. This html page can be manipulated by styling called CSS. -There are some default style files available- Users can also customize this page by creating their own CSS (outlined in link:../overlay-advanced/overlay-advanced.adoc[Overlay Advanced]). This html page requires javascript, which is supported by most modern web browsers.
+There is an html page containing all the relevant information attached to the currently activated line in Shabad OS. This html page can be manipulated by styling called CSS. -There are some default style files available- Users can also customize this page by creating their own CSS (outlined in xref:overlay-advanced:overlay-advanced.adoc[Overlay Advanced]). This html page requires javascript, which is supported by most modern web browsers.
 
 Users can use Google Chrome to open the overlay URL and then cast it to a chromecast. Users could use built in web browsers in some smart TVs or modern consoles to accesss the overlay URL. Users could simply use the web browsers on their laptop/PC to make images to fit on their video editors as a captions slide. Mostly we have helped users integrate a web browser with their live streaming software for live captioning.
 
@@ -16,7 +16,7 @@ In _Shabad OS > Settings > Overlay_ there is a dropdown allowing users to pick g
 
 TIP: If one wanted to, they could always resize the fullscreen overlay to a smaller width than the actual resolution and position it on the left or right side. There are themes for simple and direct uses and there are creative ways to manipulate these basic themes in other software.
 
-TIP: One can customize these basic themes or create their own based on a copy of the given themes. See link:../overlay-advanced/overlay-advanced.adoc[Overlay Advanced] for more info.
+TIP: One can customize these basic themes or create their own based on a copy of the given themes. See xref:overlay-advanced:overlay-advanced.adoc[Overlay Advanced] for more info.
 
 ### Step 2: Toggle display of fields
 
@@ -26,4 +26,4 @@ For a description of each overlay field, please refer to the table in Settings >
 
 ### Step 3: Find the Overlay URL
 
-include::../url-endpoints/find-url.adoc[]
+include::url-endpoints:partial$find-url.adoc[]

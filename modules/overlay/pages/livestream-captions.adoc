@@ -4,13 +4,13 @@ NOTE: This tutorial is for users wishing to integrate Shabad OS captions with th
 
 ## Concept
 
-Shabad OS provides a url which displays parts of the currently activated line. To show this on a livestream, one has to add a browser element to the livestream program/software and point it to the aforementioned url. For more information on setting up the overlay, please see link:../overlay-basics/overlay-basics.adoc[overlay-basics]. This tutorial will show you how to integrate the overlay url with your livestream software.
+Shabad OS provides a url which displays parts of the currently activated line. To show this on a livestream, one has to add a browser element to the livestream program/software and point it to the aforementioned url. For more information on setting up the overlay, please see link:overlay-basics:overlay-basics.adoc[overlay-basics]. This tutorial will show you how to integrate the overlay url with your livestream software.
 
 ## Practical
 
 ### Step 1: Find the Overlay URL for Shabad OS
 
-include::../url-endpoints/find-url.adoc[]
+include::url-endpoints:partial$find-url.adoc[]
 
 ### Step 2: Configure the Livestream Software
 
@@ -34,5 +34,5 @@ image::add-browser-vmix.png[vMix,300]
 
 ## Related
 
-- link:../overlay-basics/overlay-basics.adoc[Overlay Basics]
-- link:../overlay-advanced/overlay-advanced.adoc[Overlay Advanced]
+- xref:overlay-basics.adoc[Overlay Basics]
+- xref:overlay-advanced.adoc[Overlay Advanced]

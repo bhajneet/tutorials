@@ -1,0 +1,32 @@
+version: 2.1
+
+jobs:
+  publish-docs:
+    docker:
+      - image: node:12
+    working_directory: ~/shabad-os
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
+      - run:
+          name: Build the docs
+          command: npm run build
+      - run:
+          name: Publish the build folder to gh-pages
+          command: |
+            git config --global push.default current
+            git config --global user.email "team@shabados.com"
+            git config --global user.name "ShabadOS Bot"
+
+            git remote set-url origin https://${GITHUB_TOKEN}@github.com/ShabadOS/tutorials.git
+
+            git add build && git commit -m "build: release docs"
+            git subtree push --prefix build origin gh-pages
+
+workflows:
+  version: 2
+  build-desktop:
+    jobs:
+      - publish-docs

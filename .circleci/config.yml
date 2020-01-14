@@ -23,7 +23,8 @@ jobs:
             git remote set-url origin https://${GITHUB_TOKEN}@github.com/ShabadOS/tutorials.git
 
             git add -f build && git commit -m "build: release docs"
-            git subtree push -f --prefix  build origin gh-pages
+            git subtree split --prefix build -b gh-pages
+            git push -f origin gh-pages:gh-pages
 
 workflows:
   version: 2

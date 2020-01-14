@@ -5,7 +5,7 @@
   "scripts": {
     "start": "cd ui && npm start",
     "build": "cd ui && npm run build && cd .. && antora antora-playbook.yml",
-    "postinstall": "cd ui && npm run install"
+    "postinstall": "cd ui && npm install"
   },
   "repository": {
     "type": "git",

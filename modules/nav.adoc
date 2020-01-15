@@ -1,5 +1,7 @@
 * xref:ROOT:home.adoc[Home]
 
+* xref:basics:install.adoc[Install]
+
 * xref:url-endpoints:url-endpoints.adoc[URL Endpoints]
 
 * xref:chromecast:chromecast.adoc[Chromecast]

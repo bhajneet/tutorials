@@ -23,6 +23,7 @@ jobs:
             git remote set-url origin https://${GITHUB_TOKEN}@github.com/ShabadOS/tutorials.git
 
             cp -r .circleci build/site/.circleci
+            cp CNAME build/site/CNAME
 
             git add -f build/site && git commit -m "build: release docs"
             git subtree split --prefix build/site -b gh-pages

@@ -1,14 +1,14 @@
 /*! Adapted from the GitHub style by Vasily Polovnyov <vast@whiteants.net> */
 .hljs-comment,
 .hljs-quote {
-  color: #998;
+  color: var(--color-gray-30);
   font-style: italic;
 }
 
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-subst {
-  color: #333;
+  color: var(--color-jet-50);
   font-weight: var(--monospace-font-weight-bold);
 }
 
@@ -17,18 +17,18 @@
 .hljs-variable,
 .hljs-template-variable,
 .hljs-tag .hljs-attr {
-  color: #008080;
+  color: #006C6C;
 }
 
 .hljs-string,
 .hljs-doctag {
-  color: #d14;
+  color: #C40233;
 }
 
 .hljs-title,
 .hljs-section,
 .hljs-selector-id {
-  color: #900;
+  color: #8A2A32;
   font-weight: var(--monospace-font-weight-bold);
 }
 
@@ -38,43 +38,43 @@
 
 .hljs-type,
 .hljs-class .hljs-title {
-  color: #458;
+  color: #00618A;
   font-weight: var(--monospace-font-weight-bold);
 }
 
 .hljs-tag,
 .hljs-name,
 .hljs-attribute {
-  color: #000080;
+  color: #272C71;
   font-weight: normal;
 }
 
 .hljs-regexp,
 .hljs-link {
-  color: #009926;
+  color: #006C47;
 }
 
 .hljs-symbol,
 .hljs-bullet {
-  color: #990073;
+  color: #7D1B4D;
 }
 
 .hljs-built_in,
 .hljs-builtin-name {
-  color: #0086b3;
+  color: #005A5B;
 }
 
 .hljs-meta {
-  color: #999;
+  color: var(--color-gray-30);
   font-weight: var(--monospace-font-weight-bold);
 }
 
 .hljs-deletion {
-  background: #fdd;
+  background: #F9C8C5;
 }
 
 .hljs-addition {
-  background: #dfd;
+  background: #C6ECD1;
 }
 
 .hljs-emphasis {

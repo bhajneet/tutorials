@@ -1,21 +1,24 @@
 :root {
   /* colors */
   --color-white: #fff;
-  --color-smoke-10: #fefefe;
-  --color-smoke-30: #fafafa;
-  --color-smoke-50: #f5f5f5;
-  --color-smoke-70: #f0f0f0;
-  --color-smoke-90: #e1e1e1;
-  --color-gray-10: #c1c1c1;
-  --color-gray-30: #8e8e8e;
-  --color-gray-50: #808080;
-  --color-gray-70: #5d5d5d;
-  --color-jet-20: #4a4a4a;
-  --color-jet-30: #424242;
-  --color-jet-50: #333;
-  --color-jet-70: #222;
-  --color-jet-80: #191919;
+  --color-smoke-10: #F6F3EF;
+  --color-smoke-30: #F0EDE9;
+  --color-smoke-50: #E1DFDD;
+  --color-smoke-70: #D4D1CD;
+  --color-smoke-90: #C8C6C4;
+  --color-gray-10: #A8A5A3;
+  --color-gray-30: #9A9898;
+  --color-gray-50: #8F8E8D;
+  --color-gray-70: #878685;
+  --color-jet-20: #5D5C59;
+  --color-jet-30: #51504F;
+  --color-jet-50: #413F3E;
+  --color-jet-70: #302E2C;
+  --color-jet-80: #1A191A;
   --color-black: #000;
+  --brand-purple-bg: #2D2026;
+  --brand-purple-bg-hover: #693E4B;
+  --brand-tan-fg: #F0EDE9;
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 1.0625em; /* 17px */
@@ -30,11 +33,11 @@
   /* base */
   --body-background: var(--color-white);
   --panel-background: var(--color-smoke-30);
-  --panel-border-color: var(--color-smoke-90);
+  --panel-border-color: var(--color-smoke-70);
   /* navbar */
-  --navbar-background: var(--color-jet-80);
+  --navbar-background: var(--brand-purple-bg);
   --navbar-font-color: var(--color-white);
-  --navbar_hover-background: var(--color-black);
+  --navbar_hover-background: var(--brand-purple-bg-hover);
   --navbar-button-background: var(--color-white);
   --navbar-button-border-color: var(--panel-border-color);
   --navbar-button-font-color: var(--body-font-color);
@@ -51,22 +54,22 @@
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
   /* toolbar */
-  --toolbar-background: var(--panel-background);
+  --toolbar-background: var(--body-background);
   --toolbar-border-color: var(--panel-border-color);
   --toolbar-font-color: var(--color-gray-70);
   --toolbar-muted-color: var(--color-gray-30);
   --page-version-menu-background: var(--color-smoke-70);
   --page-version-missing-font-color: var(--color-gray-30);
   /* admonitions */
-  --caution-color: #a0439c;
+  --caution-color: #8B4F92;
   --caution-on-color: var(--color-white);
-  --important-color: #d32f2f;
+  --important-color: #AB4B53;
   --important-on-color: var(--color-white);
-  --note-color: #217ee7;
+  --note-color: #0077A1;
   --note-on-color: var(--color-white);
-  --tip-color: #41af46;
+  --tip-color: #008B64;
   --tip-on-color: var(--color-white);
-  --warning-color: #e18114;
+  --warning-color: #DA804D;
   --warning-on-color: var(--color-white);
   /* doc */
   --doc-font-color: var(--color-jet-50);
@@ -79,8 +82,8 @@
   --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
-  --link-font-color: #1565c0;
-  --link_hover-font-color: #104d92;
+  --link-font-color: #0087BD;
+  --link_hover-font-color: #106C8D;
   --link_unresolved-font-color: var(--important-color);
   --abstract-background: var(--color-smoke-70);
   --abstract-font-color: var(--color-jet-20);

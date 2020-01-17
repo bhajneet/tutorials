@@ -1,24 +1,24 @@
 :root {
   /* colors */
   --color-white: #fff;
-  --color-smoke-10: #F6F3EF;
-  --color-smoke-30: #F0EDE9;
-  --color-smoke-50: #E1DFDD;
-  --color-smoke-70: #D4D1CD;
-  --color-smoke-90: #C8C6C4;
-  --color-gray-10: #A8A5A3;
-  --color-gray-30: #9A9898;
-  --color-gray-50: #8F8E8D;
+  --color-smoke-10: #f6f3ef;
+  --color-smoke-30: #f0ede9;
+  --color-smoke-50: #e1dfdd;
+  --color-smoke-70: #d4d1cd;
+  --color-smoke-90: #c8c6c4;
+  --color-gray-10: #a8a5a3;
+  --color-gray-30: #9a9898;
+  --color-gray-50: #8f8e8d;
   --color-gray-70: #878685;
-  --color-jet-20: #5D5C59;
-  --color-jet-30: #51504F;
-  --color-jet-50: #413F3E;
-  --color-jet-70: #302E2C;
-  --color-jet-80: #1A191A;
+  --color-jet-20: #5d5c59;
+  --color-jet-30: #51504f;
+  --color-jet-50: #413f3e;
+  --color-jet-70: #302e2c;
+  --color-jet-80: #1a191a;
   --color-black: #000;
-  --brand-purple-bg: #2D2026;
-  --brand-purple-bg-hover: #693E4B;
-  --brand-tan-fg: #F0EDE9;
+  --brand-purple-bg: #2d2026;
+  --brand-purple-bg-hover: #693e4b;
+  --brand-tan-fg: #f0ede9;
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 1.0625em; /* 17px */
@@ -61,15 +61,15 @@
   --page-version-menu-background: var(--color-smoke-70);
   --page-version-missing-font-color: var(--color-gray-30);
   /* admonitions */
-  --caution-color: #8B4F92;
+  --caution-color: #8b4f92;
   --caution-on-color: var(--color-white);
-  --important-color: #AB4B53;
+  --important-color: #ab4b53;
   --important-on-color: var(--color-white);
-  --note-color: #0077A1;
+  --note-color: #0077a1;
   --note-on-color: var(--color-white);
-  --tip-color: #008B64;
+  --tip-color: #008b64;
   --tip-on-color: var(--color-white);
-  --warning-color: #DA804D;
+  --warning-color: #da804d;
   --warning-on-color: var(--color-white);
   /* doc */
   --doc-font-color: var(--color-jet-50);
@@ -82,8 +82,8 @@
   --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
-  --link-font-color: #0087BD;
-  --link_hover-font-color: #106C8D;
+  --link-font-color: #0087bd;
+  --link_hover-font-color: #106c8d;
   --link_unresolved-font-color: var(--important-color);
   --abstract-background: var(--color-smoke-70);
   --abstract-font-color: var(--color-jet-20);

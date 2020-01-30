@@ -32,6 +32,30 @@ Add a web browser input to your vMix mixer by clicking _Add Input > More > Web B
 .Adding a browser source to vMix
 image::add-browser-vmix.png[vMix,500]
 
+#### Wirecast Studio
+
+From our experience Wirecast is both bloated and confusing for many users. If you are dead set on using wirecast and have already exhausted the above options, then you may do the following to integrate Shabad OS with your livestream.
+
+. Add a web page shot layer to your Wirecast master layer. (You may ignore the prompt to install Flash becuase Shabad OS does not require it.)
+
+.Adding a web page shot layer to Wirecast
+image::wirecast-add-web-page.png[vMix,500]
+
+[start=2]
+. Set the name to something familiar (e.g. "Shabad OS Overlay").
+. Focus on the Address, Video Width, and Video Height fields.
+. The URL from Step 1 should be used for address (e.g. "http://localhost:1699/overlay").
+. Width and Height should match the canvas size found in _Output > Canvas Size_ (e.g. "Auto (1280x720)" would mean 1280 for the width and 720 for the height).
+
+.Configuring the Source Properties in Wirecast
+image::wirecast-source-properties.png[vMix,500]
+
+[start=6]
+. Lastly make sure that the scale of shot layer is set to 100%.
+
+.100% Scale used for the Shot Layer Properties in Wirecast
+image::wirecast-shot-layer-properties.png[vMix,500]
+
 ## Related
 
 - xref:overlay-basics.adoc[Overlay Basics]

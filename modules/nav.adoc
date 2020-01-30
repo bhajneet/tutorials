@@ -2,6 +2,8 @@
 
 * xref:basics:install.adoc[Install]
 
+* xref:database-viewer:proofreading.adoc[Proofread]
+
 * xref:url-endpoints:url-endpoints.adoc[URL Endpoints]
 
 * xref:chromecast:chromecast.adoc[Chromecast]

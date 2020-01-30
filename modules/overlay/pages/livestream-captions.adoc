@@ -23,14 +23,14 @@ TIP: Modifying browser size or ratio will result in blurry, non-crisp text. Zoom
 Add a browser to your OBS Studio scene by clicking the "+" button in _Sources_. For ease of use we recommend naming this source "Shabad OS Captions" instead of simply "Browser". Focus on the URL, Width, Height, and Custom CSS fields. The URL from Step 1 should be used. Width and Height should match the Base Canvas Resolution found in _Settings > Video_ (e.g. 1920x1080 would mean 1920 for the width and 1080 for the height). Clear the contents of Custom CSS.
 
 .Adding a browser source to OBS Studio
-image::add-browser-obs-studio.png[OBS Studio,300]
+image::add-browser-obs-studio.png[OBS Studio,500]
 
 #### vMix
 
 Add a web browser input to your vMix mixer by clicking _Add Input > More > Web Browser_. Focus on the URL, Width, and Height fields. The URL from Step 1 should be used. Width and Height should match the Output Size found in _Settings > Display_ (e.g. 1920x1080 would mean 1920 for the width and 1080 for the height).
 
 .Adding a browser source to vMix
-image::add-browser-vmix.png[vMix,300]
+image::add-browser-vmix.png[vMix,500]
 
 ## Related
 

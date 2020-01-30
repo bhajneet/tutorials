@@ -7,7 +7,7 @@ Otherwise, if you'd like to connect through the same network to Shabad OS being 
 Alternately, if it is on Windows 10, you can use the _Task Manager_ (either right click the taskbar or use the hotkey ctrl+shift+esc) to find the IP address by going to the _Performance_ tab and selecting the Ethernet/Wi-Fi being used to connect to the network.
 
 .Finding the IP Address on Windows 10
-image::url-endpoints:ip-address-windows-task-manager.png[Task Manager,300]
+image::url-endpoints:ip-address-windows-task-manager.png[Task Manager,500]
 
 Alternately, if it is on macOS, you can use the _System Preferences > Network_ (found from the apple icon in the menubar) and selecting the Ethernet/Wi-Fi being used to connect to the network.
 

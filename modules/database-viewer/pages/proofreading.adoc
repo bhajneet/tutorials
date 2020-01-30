@@ -12,15 +12,16 @@ It is difficult to choose one "correct version" with multiple saroops of Sri Gur
 
 The Shabad OS https://database.shabados.com[database viewer] helps submit differences between bani that is digitally stored and physically printed or electronically published.
 
-NOTE: Proofreaders cannot change the Shabad OS database.
+[NOTE]
+====
+Proofreaders cannot change the Shabad OS database.
 
-****
 * Proofreaders can create issues (i.e. reference tickets)
 * Proofreaders can take zero responsibility to fact check sources.
 * Proofreaders can easily compare two passages.
 
 Proofreaders cannot modify bani -- whether accidentally or maliciously. Proofreaders cannot spoof sources -- images and publishing details of sources are required. Proofreaders cannot act alone -- our process requires a second, trusted party to verify and enact changes.
-****
+====
 
 Anyone can note deviations between two passages, safely and easily, helping improve the accuracy of Shabad OS.
 

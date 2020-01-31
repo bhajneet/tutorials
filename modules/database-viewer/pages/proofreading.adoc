@@ -38,7 +38,7 @@ NOTE: Any verifiable source can be used if given proper attribution of it's publ
 
 ### View the Proof
 
-We are calling the a PDF document consisting of physical page images showing what was actually published in print a "proof". For this example tutorial we will use http://sikhbookclub.com/Book/Kabit-Sawaiye-Bhai-Gurdas-Ji-Steek3[Kabit Sawaiye Bhai Gurdas Ji Steek 3].
+We are calling, for example, the PDF document consisting of physical page images showing what was actually published in print a "proof". For this example tutorial we will use http://sikhbookclub.com/Book/Kabit-Sawaiye-Bhai-Gurdas-Ji-Steek3[Kabit Sawaiye Bhai Gurdas Ji Steek 3].
 
 ### Use the Database Viewer
 

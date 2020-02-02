@@ -28,6 +28,8 @@ Similar to choosing what is available on the presenter, a user toggles fields fo
 
 The Overlay URL can be used in a browser. E.g. open and use a browser on a second projector or add a browser to live stream broadcast software. In both examples, the Overlay URL will point to the customized overlay.
 
+## Troubleshooting
+
 If you cannot find the URL in _Shabad OS > Settings > Overlay_ then continue reading the following two methods to manually find the device's URL. After you find the URL you need to append "/overlay" to the end of the URL in order to access the overlay as explained in xref:url-endpoints:url-endpoints.adoc[URL Endpoints].
 
 include::url-endpoints:partial$find-url.adoc[]

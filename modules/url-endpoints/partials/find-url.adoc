@@ -5,7 +5,7 @@ If the same device is running Shabad OS, you may simply use "localhost" or "127.
 Otherwise, if you'd like to connect through the same network to Shabad OS being used on a different device, you may find the IP address of that device from _Shabad OS > Settings > About_ or _Shabad OS > Settings > Overlay_.
 
 .Find the IP Address in Shabad OS
-image::shabados-about-url.png[Settings About URL,500]
+image::url-endpoints:shabados-about-url.png[Settings About URL,500]
 
 [TIP]
 ====

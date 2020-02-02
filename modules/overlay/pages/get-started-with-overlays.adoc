@@ -4,27 +4,30 @@ NOTE: This tutorial is for users that want to show the currently activated line 
 
 ## Concept
 
-There is an html page containing the information related to the currently activated line in Shabad OS. This html page can be manipulated by styling called CSS. Users can also customize this page by creating their own CSS (outlined in 
-xref:overlay:create-a-custom-overlay-theme.adoc[Create a Custom Overlay Theme]). This html page requires javascript, which is supported by most modern web browsers.
+There is an html page containing the information related to the currently activated line in Shabad OS. This html page can be manipulated by styling called CSS. Users can also customize this page by customizing the CSS (i.e. xref:overlay:create-a-custom-overlay-theme.adoc[Create a Custom Overlay Theme]). This html page requires javascript, which is supported by most modern web browsers.
 
 Users can use Google Chrome to open the overlay URL and then cast it to a chromecast. Users could use built in web browsers in some smart TVs or modern consoles to accesss the overlay URL. Users could simply use the web browsers on their laptop/PC to make images to fit on their video editors as a captions slide. Mostly we have helped users integrate a web browser with their live streaming software for live captioning.
 
 ## Practical
 
-### Step 1: Pick an Overlay Theme
+### Step 1: Pick an Overlay
 
-In _Shabad OS > Settings > Overlay_ there is a dropdown allowing users to pick general themes for how their overlay can appear. There are fullscreen overlays (similar to projectors), top (with captions appearing in a full banner on the top), and left (with captions appearing in a full banner on the left).
+In _Shabad OS > Settings > Overlay_ there is a dropdown called _Overlay Name_. This allows users to change the appearance of an overlay. There are overlay themes for presentation, top captions, and subtitles.
 
-TIP: If one wanted to, they could always resize the fullscreen overlay to a smaller width than the actual resolution and position it on the left or right side. There are themes for simple and direct uses and there are creative ways to manipulate these basic themes in other software.
+TIP: To give an idea of how flexible Overlays are, try the "Avani Conference" theme. This displays the information on the left hand side allowing a video or live presentation to play on the right.
 
-TIP: One can customize these basic themes or create their own based on a copy of the given themes. See xref:overlay-advanced:overlay-advanced.adoc[Overlay Advanced] for more info.
+TIP: Overlays are designed around filling the screen, but a broadcast element could resize or reposition the Shabad OS overlay in creative ways. If you took the Avani Presentation overlay and resized the element in OBS/Wirecast it would act similar to the Avani Conference theme. There are creative ways to manipulate these basic themes in other software.
 
-### Step 2: Toggle display of fields
+TIP: xref:overlay:create-a-custom-overlay-theme.adoc[Customize] an overlay with the provided example overlay.
 
-Similar to choosing what is available on the presenter, a user toggles fields for the overlay. If one were using the shabad os display on one projector they could use the overlay on another projector to show different fields when presenting on two projectors (i.e. gurbani + punjabi on left screen and gurbani + english translation and pronunciation on right screen).
+### Step 2: Toggle visible information
 
-For a description of each overlay field, please refer to the table in Settings > Display.
+Similar to choosing what is available on the presenter, a user toggles fields for the overlay. If one were using the Shabad OS display on one projector they could use the overlay on another projector to show different fields when presenting on two projectors (i.e. gurbani + punjabi on left screen and gurbani + english translation and pronunciation on right screen).
 
-### Step 3: Find the Overlay URL
+### Step 3: Use the Overlay URL
+
+The Overlay URL can be used in a browser. E.g. open and use a browser on a second projector or add a browser to live stream broadcast software. In both examples, the Overlay URL will point to the customized overlay.
+
+If you cannot find the URL in _Shabad OS > Settings > Overlay_ then continue reading the following two methods to manually find the device's URL. After you find the URL you need to append "/overlay" to the end of the URL in order to access the overlay as explained in xref:url-endpoints:url-endpoints.adoc[URL Endpoints].
 
 include::url-endpoints:partial$find-url.adoc[]

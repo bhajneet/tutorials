@@ -29,3 +29,7 @@ A breakdown of the terminology used for Shabad OS URLs tends to follow the patte
 |/overlay
 |HTML file showing all relevant fields of currently activated line. Can be styled/customized by CSS. See xref:overlay:overlay.adoc[Overlay] for an outline.
 |===
+
+### Example
+
+For example, if the device running Shabad OS has an IP address of 192.168.0.128, then the url for the overlay endpoint would be "http://192.168.0.128:1699/overlay". This could be used in a browser by any device on the same network. For example, allowing you to use Shabad OS from one device and livestream software from a second device. (Again, if the livestream software and Shabad OS were both running on the same device, you could have simply used "http://localhost:1699/overlay" as the URL).

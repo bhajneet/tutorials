@@ -1,16 +1,12 @@
-# Overlay Tips
+# Overlay
 
-NOTE: This tutorial is for users that want to learn more about Overlays. This tutorial describes what an overlay is and how it can be used.
+Overlays provide a convenient second screen for projectors, live streaming broadcasts, and vision impaired monitors.
 
-## Concept
+When a line is activated in the controller and seen on the presenter, the same information is used to generate the overlay.
 
-An overlay is an alternate display/presentation page. It contains information relevant to the currently activated line.
+Currently only one overlay configuration is available through the GUI, but advanced users can set up multiple overlays with in-depth knowledge of custom CSS.
 
-This alternate view of the current line enables users to add live streaming captioning for their broadcasts. It can be used as a secondary projector view containing alternate secondary fields (So the first projector shows the Gurbani and English Translation + Transliteration and the second projector shows the Gurbani and Punjabi Translation). And as a third example it can be used as a screen reader for the elderly with extra large text and high contrast letters.
-
-By far the most popular use case we've heard is to add Live Streaming Captioning.
-
-## Related
+## Tutorials
 
 * xref:overlay:get-started-with-overlays.adoc[Get started with Overlays] - Find overlays, change settings quickly, and more
 * xref:overlay:add-live-streaming-captioning.adoc[Add Live Streaming Captioning]

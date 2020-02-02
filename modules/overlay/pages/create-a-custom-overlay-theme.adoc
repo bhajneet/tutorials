@@ -63,4 +63,5 @@ This inspector can show you what your CSS theme file is changing. Choosing a col
 
 ## Related
 
-- xref:overlay-basics.adoc[Overlay Basics]
+* xref:overlay:get-started-with-overlays.adoc[Get started with Overlays] - Find overlays, change settings quickly, and more
+* xref:overlay:add-live-streaming-captioning.adoc[Add Live Streaming Captioning]

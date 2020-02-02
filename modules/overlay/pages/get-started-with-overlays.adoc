@@ -1,10 +1,11 @@
-# Overlay Basics
+# Get started with Overlays
 
-NOTE: This tutorial can help users show the currently activated line as livestream captions, video editing slides, and alternate displays (TV, Projector, Chromecast). This tutorial teaches users to learn how to modify the overlay url in Shabad OS and how to access it through a browser.
+NOTE: This tutorial is for users that want to show the currently activated line as livestream captions, video editing slides, and alternate displays (TV, Projector, Chromecast). This tutorial shows how to modify the overlay url in Shabad OS and how to access it through a browser.
 
 ## Concept
 
-There is an html page containing all the relevant information attached to the currently activated line in Shabad OS. This html page can be manipulated by styling called CSS. -There are some default style files available- Users can also customize this page by creating their own CSS (outlined in xref:overlay-advanced:overlay-advanced.adoc[Overlay Advanced]). This html page requires javascript, which is supported by most modern web browsers.
+There is an html page containing the information related to the currently activated line in Shabad OS. This html page can be manipulated by styling called CSS. Users can also customize this page by creating their own CSS (outlined in 
+xref:overlay:create-a-custom-overlay-theme.adoc[Create a Custom Overlay Theme]). This html page requires javascript, which is supported by most modern web browsers.
 
 Users can use Google Chrome to open the overlay URL and then cast it to a chromecast. Users could use built in web browsers in some smart TVs or modern consoles to accesss the overlay URL. Users could simply use the web browsers on their laptop/PC to make images to fit on their video editors as a captions slide. Mostly we have helped users integrate a web browser with their live streaming software for live captioning.
 

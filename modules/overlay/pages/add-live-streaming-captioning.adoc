@@ -58,5 +58,5 @@ image::wirecast-shot-layer-properties.png[vMix,500]
 
 ## Related
 
-- xref:overlay-basics.adoc[Overlay Basics]
-- xref:overlay-advanced.adoc[Overlay Advanced]
+* xref:overlay:get-started-with-overlays.adoc[Get started with Overlays] - Find overlays, change settings quickly, and more
+* xref:overlay:create-a-custom-overlay-theme.adoc[Create a Custom Overlay Theme]

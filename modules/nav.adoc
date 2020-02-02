@@ -8,7 +8,7 @@
 
 * xref:chromecast:chromecast.adoc[Chromecast]
 
-* xref:overlay:overlay-basics.adoc[Overlay]
-** xref:overlay:overlay-basics.adoc[Overlay Basics]
-** xref:overlay:livestream-captions.adoc[Adding Livestream Captions]
-** xref:overlay:overlay-advanced.adoc[Overlay Advanced]
+* xref:overlay:overlay.adoc[Overlay]
+** xref:overlay:get-started-with-overlays.adoc[Get started with Overlays]
+** xref:overlay:add-live-streaming-captioning.adoc[Add Live Streaming Captioning]
+** xref:overlay:create-a-custom-overlay-theme.adoc[Create a Custom Overlay Theme]

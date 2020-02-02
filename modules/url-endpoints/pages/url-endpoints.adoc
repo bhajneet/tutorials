@@ -27,5 +27,5 @@ A breakdown of the terminology used for Shabad OS URLs tends to follow the patte
 |A fullscreened controller in the search activity
 
 |/overlay
-|HTML file showing all relevant fields of currently activated line. Can be styled/customized by CSS. See xref:overlay-basics:overlay-basics.adoc[overlay-basics] for an outline.
+|HTML file showing all relevant fields of currently activated line. Can be styled/customized by CSS. See xref:overlay:overlay.adoc[Overlay] for an outline.
 |===

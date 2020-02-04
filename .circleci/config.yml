@@ -1,0 +1,40 @@
+version: 2.1
+
+jobs:
+  publish-docs:
+    docker:
+      - image: node:12
+    working_directory: ~/shabad-os
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install --unsafe-perm
+      - run:
+          name: Build the docs
+          command: npm run build
+      - run:
+          name: Publish the build folder to gh-pages
+          command: |
+            git config --global push.default current
+            git config --global user.email "team@shabados.com"
+            git config --global user.name "ShabadOS Bot"
+
+            git remote set-url origin https://${GITHUB_TOKEN}@github.com/ShabadOS/tutorials.git
+
+            cp -r .circleci build/site/.circleci
+            cp CNAME build/site/CNAME
+
+            git add -f build/site && git commit -m "build: release docs"
+            git subtree split --prefix build/site -b gh-pages
+            git push -f origin gh-pages:gh-pages
+
+workflows:
+  version: 2
+  publish-tutorials:
+    jobs:
+      - publish-docs:
+          filters:
+            branches:
+              only:
+                - master

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Get started with Overlays - Shabad OS Tutorials</title>
+    <link rel="canonical" href="https://tutorials.shabados.com/tutorials/1.0.0/overlay/get-started-with-overlays.html">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://tutorials.shabados.com">
+        <img class="logo" src="../../../_/img/logo.png" alt="Shabad OS">
+        Shabad OS Tutorials
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://docs.shabados.com/database" target="_blank">Database Docs</a>
+        <a class="navbar-item" href="https://github.com/shabados/desktop" target="_blank">GitHub</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://shabados.com">Download Shabad OS</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="tutorials" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../home.html">Tutorials</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../home.html">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../basics/install.html">Install</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../database-viewer/proofreading.html">Proofread</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../url-endpoints/url-endpoints.html">URL Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../chromecast/chromecast.html">Chromecast</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="overlay.html">Overlay</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="get-started-with-overlays.html">Get started with Overlays</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="add-live-streaming-captioning.html">Add Live Streaming Captioning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="create-a-custom-overlay-theme.html">Create a Custom Overlay Theme</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Tutorials</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Tutorials</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../home.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../home.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../home.html">Tutorials</a></li>
+    <li><a href="overlay.html">Overlay</a></li>
+    <li><a href="get-started-with-overlays.html">Get started with Overlays</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/ShabadOS/tutorials/edit/master/modules/overlay/pages/get-started-with-overlays.adoc">Edit this Page</a></div>
+  </div>
+<article class="doc">
+<h1 class="page">Get started with Overlays</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This tutorial is for users that want to show the currently activated line as livestream captions, video editing slides, and alternate displays (TV, Projector, Chromecast). This tutorial shows how to modify the overlay url in Shabad OS and how to access it through a browser.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_concept"><a class="anchor" href="#_concept"></a>Concept</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There is an html page containing the information related to the currently activated line in Shabad OS. This html page can be manipulated by styling called CSS. Users can also customize this page by customizing the CSS (i.e. <a href="create-a-custom-overlay-theme.html" class="page">Create a Custom Overlay Theme</a>). This html page requires javascript, which is supported by most modern web browsers.</p>
+</div>
+<div class="paragraph">
+<p>Users can use Google Chrome to open the overlay URL and then cast it to a chromecast. Users could use built in web browsers in some smart TVs or modern consoles to accesss the overlay URL. Users could simply use the web browsers on their laptop/PC to make images to fit on their video editors as a captions slide. Mostly we have helped users integrate a web browser with their live streaming software for live captioning.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_practical"><a class="anchor" href="#_practical"></a>Practical</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_step_1_pick_an_overlay"><a class="anchor" href="#_step_1_pick_an_overlay"></a>Step 1: Pick an Overlay</h3>
+<div class="paragraph">
+<p>In <em>Shabad OS &gt; Settings &gt; Overlay</em> there is a dropdown called <em>Overlay Name</em>. This allows users to change the appearance of an overlay. There are overlay themes for presentation, top captions, and subtitles.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+To give an idea of how flexible Overlays are, try the "Avani Conference" theme. This displays the information on the left hand side allowing a video or live presentation to play on the right.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Overlays are designed around filling the screen, but a broadcast element could resize or reposition the Shabad OS overlay in creative ways. If you took the Avani Presentation overlay and resized the element in OBS/Wirecast it would act similar to the Avani Conference theme. There are creative ways to manipulate these basic themes in other software.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<a href="create-a-custom-overlay-theme.html" class="page">Customize</a> an overlay with the provided example overlay.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_2_toggle_visible_information"><a class="anchor" href="#_step_2_toggle_visible_information"></a>Step 2: Toggle visible information</h3>
+<div class="paragraph">
+<p>Similar to choosing what is available on the presenter, a user toggles fields for the overlay. If one were using the Shabad OS display on one projector they could use the overlay on another projector to show different fields when presenting on two projectors (i.e. gurbani + punjabi on left screen and gurbani + english translation and pronunciation on right screen).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_3_use_the_overlay_url"><a class="anchor" href="#_step_3_use_the_overlay_url"></a>Step 3: Use the Overlay URL</h3>
+<div class="paragraph">
+<p>The Overlay URL can be used in a browser. E.g. open and use a browser on a second projector or add a browser to live stream broadcast software. In both examples, the Overlay URL will point to the customized overlay.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_troubleshooting"><a class="anchor" href="#_troubleshooting"></a>Troubleshooting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you cannot find the URL in <em>Shabad OS &gt; Settings &gt; Overlay</em> then continue reading the following two methods to manually find the device&#8217;s URL. After you find the URL you need to append "/overlay" to the end of the URL in order to access the overlay as explained in <a href="../url-endpoints/url-endpoints.html" class="page">URL Endpoints</a>.</p>
+</div>
+<div class="paragraph">
+<p>The device running Shabad OS has an IP address. In production, Shabad OS is available from port 1699 of this IP address. This combination of IP address and port can be used in most web browsers.</p>
+</div>
+<div class="paragraph">
+<p>If the same device is running Shabad OS, you may simply use "localhost" or "127.0.0.1" for the IP address (i.e. with port: "http://localhost:1699/" or "http://127.0.0.1:1699/"). If this is the case, you do not need to find the device&#8217;s IP address on the network.</p>
+</div>
+<div class="paragraph">
+<p>Otherwise, if you&#8217;d like to connect through the same network to Shabad OS being used on a different device, you may find the IP address of that device from <em>Shabad OS &gt; Settings &gt; About</em> or <em>Shabad OS &gt; Settings &gt; Overlay</em>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../url-endpoints/_images/shabados-about-url.png" alt="Settings About URL" width="500">
+</div>
+<div class="title">Figure 1. Find the IP Address in Shabad OS</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Windows 10 users can view the <em>Task Manager</em> (either right click the taskbar or use the hotkey ctrl+shift+esc) to find the IP address. Use the <em>Performance</em> tab and select the Ethernet/Wi-Fi being used to connect to the network in the Task Manager.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../url-endpoints/_images/ip-address-windows-task-manager.png" alt="Task Manager" width="500">
+</div>
+<div class="title">Figure 2. Finding the IP Address on Windows 10</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>macOS users can view <em>System Preferences &gt; Network</em> (found from the apple icon in the menubar). Then select the Ethernet/Wi-Fi being used to connect to the network.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

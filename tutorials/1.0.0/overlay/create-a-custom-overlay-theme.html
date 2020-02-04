@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Overlay Advanced - Shabad OS Tutorials</title>
+    <link rel="canonical" href="https://tutorials.shabados.com/tutorials/1.0.0/overlay/create-a-custom-overlay-theme.html">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://tutorials.shabados.com">
+        <img class="logo" src="../../../_/img/logo.png" alt="Shabad OS">
+        Shabad OS Tutorials
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://docs.shabados.com/database" target="_blank">Database Docs</a>
+        <a class="navbar-item" href="https://github.com/shabados/desktop" target="_blank">GitHub</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://shabados.com">Download Shabad OS</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="tutorials" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../home.html">Tutorials</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../home.html">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../basics/install.html">Install</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../database-viewer/proofreading.html">Proofread</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../url-endpoints/url-endpoints.html">URL Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../chromecast/chromecast.html">Chromecast</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="overlay.html">Overlay</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="get-started-with-overlays.html">Get started with Overlays</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="add-live-streaming-captioning.html">Add Live Streaming Captioning</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="create-a-custom-overlay-theme.html">Create a Custom Overlay Theme</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Tutorials</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Tutorials</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../home.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../home.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../home.html">Tutorials</a></li>
+    <li><a href="overlay.html">Overlay</a></li>
+    <li><a href="create-a-custom-overlay-theme.html">Create a Custom Overlay Theme</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/ShabadOS/tutorials/edit/master/modules/overlay/pages/create-a-custom-overlay-theme.adoc">Edit this Page</a></div>
+  </div>
+<article class="doc">
+<h1 class="page">Overlay Advanced</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This tutorial is for users wishing to customize the appearance of the overlay. This tutorial will go through an example of copying and modifying an existing theme.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_concept"><a class="anchor" href="#_concept"></a>Concept</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The overlay endpoint can be manipulated by styling the html with CSS. This customization is done in a markup language similar to HTML. The layout, colors, and fonts can all be described in various ways using CSS. With advanced mastery of CSS, one could even add content to the HTML using CSS.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_practical"><a class="anchor" href="#_practical"></a>Practical</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The style files end in extension <code>.css</code> (e.g. <code>default.css</code>). These files are located in the <code>overlay</code> folder based on the operating system of the device running Shabad OS:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Windows: <code>%appdata%\Shabad OS\overlay</code></p>
+</li>
+<li>
+<p>macOS: <code>~/Library/Application Support/Shabad OS/overlay</code></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Use a file manager to see the <code>.css</code> files. For Windows type in the address bar of File Explorer. For macOS use the global menu item <em>Go &gt; Go To Folder</em> (<em>cmd+shift+g</em>) in the Finder.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+By default the OS hides file extensions like .txt, .exe, and .css. It is helpful to see these file extensions when working with CSS files, especially on macOS which will sometimes change the file extension to something like .txt or .html on it&#8217;s own.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_step_1_open_an_existing_css_file"><a class="anchor" href="#_step_1_open_an_existing_css_file"></a>Step 1: Open an existing CSS file</h3>
+<div class="paragraph">
+<p>Any plain text editor can open CSS files. On Windows there is <em>Notepad</em> and on macOS there is <em>Text Edit</em>. Once you&#8217;ve opened one of the Shabad OS Overlay Theme CSS files, you will see lines of code such as:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>:root {
+  --background-color: #19203C;
+}
+
+.app {
+  width: 100vw;
+  text-align: center;
+}
+
+.overlay {
+	padding: 1vh 1vw;
+	background-color: var(--background-color);
+	min-height: 9vh;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>At a higher level there are descriptions for root, app, and overlay. Inside root there is a variable defined as "background-color". Inside the overlay class we&#8217;ve given it this background color via the variable. There are units of measure for width and padding in percentages of viewport (i.e. 100% viewport width, 1% viewport height, 1% viewport width), where the viewport is the usable space of the browser window.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_2_modifying_css_files"><a class="anchor" href="#_step_2_modifying_css_files"></a>Step 2: Modifying CSS files</h3>
+<div class="paragraph">
+<p>First copy any of the existing themes that you would like to modify. The file name will be used as the name of the theme in Shabad OS. Select the newly copied overlay theme from the dropdown in <em>Shabad OS &gt; Settings &gt; Overlay</em>.</p>
+</div>
+<div class="paragraph">
+<p>Open the CSS file in a text editor. Colors and their opacity are defined by values outlined <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">here</a>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Try using a color picker or a website like <a href="https://duckduckgo.com/?q=color+picker&amp;t=ffab&amp;ia=answer">DuckDuckGo</a> to change the background color of the overlay theme.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>There are tutorials to learn CSS without any prior experience from Mozilla&#8217;s handy developer docs: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="bare">https://developer.mozilla.org/en-US/docs/Web/CSS</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_3_inspect_the_overlay_url"><a class="anchor" href="#_step_3_inspect_the_overlay_url"></a>Step 3: Inspect the Overlay URL</h3>
+<div class="paragraph">
+<p>Open the overlay url in Google Chrome or Mozilla Firefox (see <a href="../url-endpoints/url-endpoints.html" class="page">endpoints</a> for help). Both browsers have an inspect tool that lets you see the html and modify the CSS in a sandbox. If you&#8217;ve found something you like, you can add it to your CSS file for persistence. Otherwise if you&#8217;ve made a mistake and need to start over, simply refresh the page.</p>
+</div>
+<div class="paragraph">
+<p>See how to inspect the overlay url in your browser:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>"<a href="https://developers.google.com/web/tools/chrome-devtools/">Chrome DevTools</a>" for Google Chrome</p>
+</li>
+<li>
+<p>"<a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Open_the_Inspector">Open the Inspector</a>" for Mozilla Firefox</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This inspector can show you what your CSS theme file is changing. Choosing a color from within the inspect tool can show how it impacts the rest of the theme.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_related"><a class="anchor" href="#_related"></a>Related</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="get-started-with-overlays.html" class="page">Get started with Overlays</a> - Find overlays, change settings quickly, and more</p>
+</li>
+<li>
+<p><a href="add-live-streaming-captioning.html" class="page">Add Live Streaming Captioning</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
